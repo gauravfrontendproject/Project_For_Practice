@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body,
+html {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background: white;
+    padding: 10px;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header .row {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    max-width: 120px;
+}
+
+header .menu-btn {
+    padding: 5px 10px;
+    font-size: 30px;
+    border: 0;
+    line-height: normal;
+
+}
+
+
+h1 {
+    font-size: 80px;
+    padding: 10px;
+}
+
+.explore_btn {
+    background: #ffc066;
+    align-self: flex-start;
+    border: none;
+    margin: 20px;
+    padding: 10px 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.explore_btn:hover {
+    background: #ffc066;
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+
+/* Hero image desining */
+.hero_image {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.plate {
+    position: relative;
+    top: 20px;
+}
+
+.hero_content {
+    gap: 20px;
+    padding: 15px;
+
+}
+
+
+.hero_content h1 {
+    font-size: 75px;
+    line-height: 1.2;
+    font-weight: 45;
+    margin-top: 15px;
+}
+
+.explore_btn {
+    background: #ffc066;
+    align-self: flex-start;
+}
+
+.tag span {
+    background-color: #149f39;
+    padding: 5px 10px;
+    color: white;
+    align-self: flex-start;
+    margin: 11px;
+}
+
+.tag p {
+    margin-left: 20px;
+    line-height: normal;
+    font-weight: normal;
+    padding: 2px;
+    font-size: 18px;
+}
+
+/* Section Design*/
+
+
+.features {
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.feature {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.feature_content h3 {
+    padding: 8px;
+}
+
+.feature_content p {
+    margin-left: 8px;
+    line-height: normal;
+    font-weight: normal;
+}
+
+.feature img {
+    width: 72px;
+}
+
+.feature:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+
+
+
+
+/* Grid Designing */
+
+.divider {
+    border: 1px solid #ccc;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+}
+
+.menu .tag_menu {
+    align-self: center;
+    background-color: #149f39;
+    padding: 5px 10px;
+}
+
+.grid_image {
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.grid_image:hover {
+    transform: scale(1.0);
+    transition: 0.2s ease-in-out;
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "I1 I1 I2 I3"
+        "I1 I1 I2 I7"
+        "I4 I5 I6 I7";
+}
+
+.item1 {
+    grid-area: I1;
+}
+
+.item2 {
+    grid-area: I2;
+}
+
+.item3 {
+    grid-area: I3;
+}
+
+.item4 {
+    grid-area: I4;
+}
+
+.item5 {
+    grid-area: I5;
+}
+
+.item6 {
+    grid-area: I6;
+}
+
+.item7 {
+    grid-area: I7;
+}
+
+/* Footer Design*/
+footer {
+    background-color: #fff0db;
+}
+
+.link_lists h3 {
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.link_lists ul {
+    list-style-type: none;
+}
+
+.link_lists ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.link_lists ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.news_letter h3 {
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.news_letter input {
+    padding: 5px 4px;
+    margin-bottom: 10px;
+}
+
+.footer_container {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icon_container {
+    display: flex;
+    gap: 15px;
+    font-size: 32px;
+}
+
+.icon a {
+    color: #000;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 786px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero_image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero_image img {
+        width: 80%;
+    }
+
+    .hero_content {
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .hero_content h1 {
+        font-size: 32px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        flex-direction: column;
+    }
+
+    .grid {
+        padding: 10px;
+    }
+
+    .grid-image {
+        border-radius: 0px;
+    }
+
+    .footer_container {
+        flex-direction: column;
+    }
+}

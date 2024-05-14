@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition effect</title>
+    <style>
+        body{
+            margin: 20px;
+        }
+        #trans {
+            width: 150px;
+            height: 150px;
+            background-color: darkblue;
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        #trans:hover {
+            width: 300px;
+            width: 300px;
+            transform: rotate(180deg);
+        }
+
+        /* #transform {
+            width: 150px;
+            height: 150px;
+            background-color: lightblue;
+            transform: translate(50px, 100px);
+            transform: width 1s ease;
+        }
+
+        #transform:hover {
+            width: 500px;
+            height: 500px;
+        } */
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+        }
+
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="trans"></div>
+    <div id="transform"></div>
+
+    <div class="tooltip" style="margin: 50px;">Hover me
+        <div class="tooltiptext">
+            tooltiptext
+        </div>
+    </div>
+</body>
+
+</html>

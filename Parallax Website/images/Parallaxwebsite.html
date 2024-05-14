@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-size: 16px;
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            line-height: 1.8em;
+            color: #666;
+        }
+
+        .pimg1 {
+            background-image: url(image1.png);
+            min-height: 100%;
+        }
+
+        .pimg2 {
+            background-image: url(image2.png);
+            min-height: 400px;
+        }
+
+        .pimg3 {
+            background-image: url(image3.png);
+            min-height: 400px;
+        }
+
+        .pimg1,
+        .pimg2,
+        .pimg3 {
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .ptext {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: black;
+            font-size: 27px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+
+        .textBg {
+            background: #313534;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .section {
+            padding: 50px 80px;
+            text-align: center;
+        }
+
+        .section-light {
+            background-color: #f4f4f4;
+            color: #666;
+        }
+
+        .section-dark {
+            background-color: #282e34;
+            color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="pimg1">
+        <div class="ptext">
+            <span class="textBg">Parallax Website</span>
+        </div>
+    </section>
+    <section class="section section-light">
+        <h2>Section One</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere tempora, voluptate reiciendis ut distinctio
+            fugit aut culpa, perspiciatis quisquam laborum possimus inventore officiis quia expedita, iste explicabo?
+            Amet, aliquam sapiente.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente odit molestiae enim aperiam saepe.
+            Voluptatem dignissimos debitis, libero modi nostrum voluptas laboriosam dolore quos sed, ullam mollitia
+            possimus officiis alias eos nihil, dolores soluta cumque accusamus ipsum! Maxime vel vitae assumenda
+            praesentium accusantium magnam perferendis provident numquam itaque qui sunt, laudantium blanditiis, error
+            dignissimos ipsam, totam minima? Ipsa itaque laboriosam, maxime, quisquam, iusto sunt vitae nihil quo
+            voluptatum sint assumenda quae accusamus dignissimos rerum voluptates optio asperiores et reprehenderit unde
+            dolores id laborum magni? Quia eos cupiditate, quod porro voluptates neque maiores, quam asperiores ipsa
+            dignissimos quae, distinctio ipsam ea incidunt debitis laborum saepe nobis ratione repellendus molestiae
+            doloremque similique suscipit tempore? Sequi est cum veritatis non et corrupti, cupiditate, blanditiis
+            necessitatibus corporis repudiandae eius animi tempora iste beatae. Rerum iusto sit nihil omnis dolorem odio
+            maiores impedit magnam, delectus perferendis vero aspernatur voluptatum nam quaerat laboriosam inventore
+            officiis tempora!</p>
+    </section>
+
+    <section class="pimg2">
+        <div class="ptext">
+            <span class="textBg">Explore Nature</span>
+        </div>
+    </section>
+    <section class="section section-dark">
+        <h2>Section Two</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum voluptas repudiandae velit! Nisi explicabo
+            iure alias modi porro tenetur cumque distinctio illo corrupti, sit ipsum voluptatem architecto saepe labore
+            unde perferendis cupiditate facilis sunt asperiores error, tempora similique aspernatur doloremque officiis!
+            Ipsam magni aspernatur, iure sapiente nam hic necessitatibus autem commodi quae dignissimos perferendis
+            labore mollitia, perspiciatis enim at! Iste provident, culpa possimus neque minima nemo at iusto, nesciunt
+            ratione facilis sapiente corporis mollitia cupiditate libero earum, exercitationem eaque debitis molestiae
+            reprehenderit soluta facere omnis? Nemo at atque magni tempora harum soluta excepturi aspernatur modi
+            ratione ipsa dolores itaque, alias fuga consequuntur odit iusto amet recusandae eos debitis quo voluptatem
+            ab ex. Reiciendis at expedita necessitatibus corporis eum itaque ducimus placeat reprehenderit illo?
+            Repellendus mollitia alias quis quia necessitatibus tempora, vero eius voluptate molestiae. Assumenda atque
+            minima quod, magnam cumque corrupti asperiores nulla saepe, deleniti unde tempora necessitatibus reiciendis
+            earum. Aliquid totam fugit voluptate temporibus optio natus omnis beatae aut, possimus neque ullam quo
+            asperiores incidunt vel unde, atque voluptatem corporis doloremque exercitationem. Quisquam laboriosam
+            possimus voluptatibus nobis aliquid eaque sint nesciunt aliquam mollitia esse ducimus totam illum ullam, cum
+            cumque reprehenderit neque, culpa repudiandae eum doloremque optio sunt vel velit! Expedita culpa quos
+            magnam nesciunt! Quos, mollitia corporis cum expedita recusandae non quia nisi suscipit adipisci pariatur
+            vitae cupiditate porro, eius, voluptates itaque eum nostrum. Quaerat fugit dolorem illum modi quis
+            voluptates nostrum provident odit aperiam perferendis quibusdam blanditiis maiores corporis eum, tempora
+            tempore obcaecati velit quia accusantium quam!</p>
+    </section>
+
+    <section class="pimg3">
+        <div class="ptext"></div>
+        <span class="ptext">LOOK, DEEP INTO NATURE</span>
+    </section>
+    <section class="section section-dark">
+        <h2>Section Three</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, iure molestiae nihil nulla alias in, ipsam
+            neque natus quae voluptatibus assumenda velit provident sapiente repellendus doloremque aliquam atque
+            explicabo! Ea quidem ipsam quod nihil reiciendis, et tempora fugit vitae delectus sed culpa ipsa doloremque
+            beatae perferendis quo est odit in magni porro facere ex, tenetur deleniti odio accusamus! Cupiditate culpa
+            reiciendis eaque illo. Soluta atque vero fugiat impedit a quae eius, recusandae repellat totam aspernatur
+            consectetur dolore mollitia rem alias incidunt earum! Reprehenderit iste labore totam sed consectetur
+            laboriosam? Laboriosam molestiae dolores debitis? Labore atque eaque magni, sit dolor non accusantium sint,
+            assumenda adipisci ad unde libero officiis sunt mollitia alias repudiandae. Tenetur ad numquam harum
+            cupiditate enim. Laborum laboriosam nesciunt ad maxime odio quos amet tenetur soluta esse, fuga ab. Dolorum
+            aspernatur explicabo quis tenetur molestiae quam quidem a. Qui, dolorum? Animi quos cum placeat sunt ut
+            ullam officia eaque quas neque tempora sequi, nemo dolores cupiditate dicta sed commodi explicabo at
+            accusamus. Minima facilis hic error. Architecto, nulla vel aut quisquam laborum modi, optio impedit eaque
+            assumenda accusantium rerum eligendi consequuntur numquam eius error porro neque necessitatibus alias sit?
+            Distinctio id quia repudiandae cum autem temporibus nostrum voluptates.</p>
+    </section>
+
+    <section class="pimg1">
+        <div class="ptext">
+            <span class="textBg">DO SOME CODING</span>
+        </div>
+    </section>
+</body>
+
+</html>
